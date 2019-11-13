@@ -15,7 +15,7 @@ defmodule Mix.Tasks.S3.Upload do
   def upload(bucket, local_path, remote_path) do
     local_path
     |> Path.wildcard()
-    |> Enum.each(fn file -> upload_file(bucket, file, remote_path))
+    |> Enum.each(fn file -> upload_file(bucket, file, remote_path) end)
   end
 
   def upload_file(bucket, file, remote_path) do
