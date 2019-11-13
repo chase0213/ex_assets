@@ -21,7 +21,7 @@ defmodule Mix.Tasks.S3.Upload do
   def upload_file(bucket, file, remote_path) do
     file
     |> S3.Upload.stream_file
-    |> S3.upload(bucket, path)
+    |> S3.upload(bucket, remote_path)
     |> ExAws.request!
   end
 end
