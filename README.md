@@ -1,7 +1,5 @@
 # ExAssets
 
-**TODO: Add description**
-
 ## Installation
 
 If [available in Hex](https://hex.pm/docs/publish), the package can be installed
@@ -10,7 +8,7 @@ by adding `ex_assets` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {:ex_assets, "~> 0.1.0"}
+    {:ex_assets, github: "chase0213/ex_assets"}
   ]
 end
 ```
