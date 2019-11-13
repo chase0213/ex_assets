@@ -14,7 +14,7 @@ defmodule ExAssets.MixProject do
   # Run "mix help compile.app" to learn about applications.
   def application do
     [
-      extra_applications: [:logger]
+      extra_applications: [:logger, :ex_aws]
     ]
   end
 
@@ -25,6 +25,7 @@ defmodule ExAssets.MixProject do
       {:ex_aws_s3, "~> 2.0"},
       {:poison, "~> 3.1"},
       {:hackney, "~> 1.9"},
+      {:sweet_xml, "~> 0.6"},
       # {:dep_from_hexpm, "~> 0.3.0"},
       # {:dep_from_git, git: "https://github.com/elixir-lang/my_dep.git", tag: "0.1.0"}
     ]
