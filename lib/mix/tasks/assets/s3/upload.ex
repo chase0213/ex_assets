@@ -5,6 +5,7 @@ defmodule Mix.Tasks.Assets.S3.Upload do
   @shortdoc "Upload assets to S3"
   def run(_) do
     {:ok, _} = Application.ensure_all_started(:ex_aws)
+    {:ok, _} = Application.ensure_all_started(:hackney)
 
     bucket = Application.get_env(:ex_assets, :bucket)
     local_path = Application.get_env(:ex_assets, :local_path)
